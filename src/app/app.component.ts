@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pdf-new-form-builder';
+  public form: Object;
+  constructor() {
+    this.form = {components: []};
+  }
+  onChange(event) {
+   
+  }
+
 }

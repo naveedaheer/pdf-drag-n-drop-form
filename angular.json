@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pdf-new-form-builder"
+    }
+  },
+  "defaultProject": "pdf-new-form-builder",
+  "cli": {
+    "analytics": "54164bbe-725e-49b0-a5a4-3be6b1421e22"
+  }
 }
