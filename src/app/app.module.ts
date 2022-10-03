@@ -1,17 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { FormioModule } from 'angular-formio';
+import { Formio, FormioModule ,FormioAppConfig } from '@formio/angular';
+import { PdfComponent } from './pdf/pdf.component';
+import { AppConfig } from './config';
+
+(Formio as any).icons = 'fontawesome';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PdfComponent
   ],
   imports: [
     BrowserModule,
     FormioModule
   ],
-  providers: [],
+  providers: [    {provide: FormioAppConfig, useValue: AppConfig},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
