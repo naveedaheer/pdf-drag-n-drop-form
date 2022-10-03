@@ -4,13 +4,15 @@ import { AppComponent } from './app.component';
 import { Formio, FormioModule ,FormioAppConfig } from '@formio/angular';
 import { PdfComponent } from './pdf/pdf.component';
 import { AppConfig } from './config';
+import { BuilderComponent } from './builder/builder.component';
 
 (Formio as any).icons = 'fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PdfComponent
+    PdfComponent,
+    BuilderComponent
   ],
   imports: [
     BrowserModule,
